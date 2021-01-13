@@ -1,0 +1,22 @@
+FROM ubuntu:18.04
+
+# RUN apt update
+
+RUN apt-get update && apt-get install -y \
+	python3.8 \
+	&& rm -rf /var/lib/apt/lists/*
+
+# apt install software-properties-common
+
+# RUN apt install python3.8
+
+# add-apt-repository ppa:deadsnakes/ppa
+
+
+#RUN apt-get update && apt-get install -y \
+#  bzr \
+#  cvs \
+#  git \
+#  mercurial \
+#  subversion \
+#  && rm -rf /var/lib/apt/lists/*
